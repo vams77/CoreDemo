@@ -1,0 +1,22 @@
+
+public class Hi 
+{
+	
+
+	int add()
+	{
+		int a = 10;
+		int b = 20;
+		int c = a+b;
+		return c;
+	}
+
+	public static void main(String[] args) {
+	
+	Hi ad = new Hi();
+	int result = ad.add();
+	System.out.println(result);
+
+	}
+
+}

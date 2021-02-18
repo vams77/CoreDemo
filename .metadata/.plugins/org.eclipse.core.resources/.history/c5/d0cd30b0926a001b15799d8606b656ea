@@ -1,0 +1,14 @@
+package com.valuemomentum.training.files;
+import java.io.*;
+public class Depersist {
+
+	public static void main(String[] args) {
+		
+		ObjectInputStream in = new ObjectInputStream(new FileInputstream("C:/demo/f.txt"));
+         Student s = (Student)in.readObject();
+         System.out.println(s.id+ ""s.name);
+         in.close();
+         
+	}
+
+}

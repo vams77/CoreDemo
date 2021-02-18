@@ -1,0 +1,24 @@
+package com.valuemomentum.training.concurancy;
+public class MyThread extends Thread{
+
+	 public static void main(String[] args) {
+	MyThread t=new MyThread();
+	t.create();
+	System.out.println("Main Thread");
+	}
+	void create() {
+	Thread t1=new Thread(this);
+	t1.start();
+	}
+	public void run() {
+	int i=1;
+	while(i<5) {
+	try {
+	System.out.println("Child Thread");
+	Thread.sleep(1000);
+	}
+	catch(Exception e) {}
+	i++;
+	}
+	}
+	}

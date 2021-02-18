@@ -1,0 +1,18 @@
+package com.valuemomentum.training.concurancy;
+
+public class MyThread {
+
+	public static void main(String[] args) {
+		
+		MyThread Objex = new MyThread ();
+		Objex.create();
+		System.out.println("This id the main thread");
+	}
+	public void create()
+	{
+		Thread Objth = new Thread();
+		
+		Objth.start();
+	}
+
+}

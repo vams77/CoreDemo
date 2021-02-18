@@ -1,0 +1,5 @@
+package com.valuemomentum.training.testing.JUnitDemo;
+
+public class Calculator {
+
+}
